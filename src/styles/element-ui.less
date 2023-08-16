@@ -1,0 +1,77 @@
+// cover some element-ui styles
+
+.el-breadcrumb__inner,
+.el-breadcrumb__inner a {
+    font-weight: 400 !important;
+}
+
+.el-upload {
+    input[type="file"] {
+        display: none !important;
+    }
+}
+
+.el-upload__input {
+    display: none;
+}
+
+
+// to fixed https://github.com/ElemeFE/element/issues/2461
+.el-dialog {
+    transform: none;
+    left: 0;
+    position: relative;
+    margin: 0 auto;
+}
+
+// refine element ui upload
+.upload-container {
+    .el-upload {
+        width: 100%;
+
+        .el-upload-dragger {
+            width: 100%;
+            height: 200px;
+        }
+    }
+}
+
+// dropdown
+.el-dropdown-menu {
+    a {
+        display: block
+    }
+}
+
+// to fix el-date-picker css style
+.el-range-separator {
+    box-sizing: content-box;
+}
+
+.el-form-item__label {
+    font-size: 0.15rem;
+}
+
+.el-switch, .el-switch__label {
+    height: 32px;
+}
+
+.el-switch__label * {
+    font-size: 0.16rem;
+    line-height: 28px;
+}
+
+#app .sidebar-container .el-menu-item.is-active i, #app .sidebar-container .el-menu-item.is-active span {
+    color: rgb(64, 158, 255);
+}
+
+.el-dialog__header {
+    padding: 20px 20px 10px;
+    display: flex;
+}
+
+.dialog-footer{
+    display: flex;
+    justify-content: flex-end;
+}
+
